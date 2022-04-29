@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content= "Julianne Laragan">
+	<link rel = "icon" href ="../image/uelogo.png" type = "image/x-icon">
+	<title>Pizza Order Form</title>
+	<style type="text/css">
+		body {
+			background: url(../images/background.jpg);
+		}
+		* {
+			box-sizing: border-box;
+		}
+
+		h2 {
+			font-family: Verdana, Helvetica;
+			text-align: center;
+		}
+		form {
+			width:500px;
+			background-color:#eddca4;
+			border: 5px solid black;
+			border-radius: 10px;
+			box-shadow: 10px 10px 10px 0px black;
+		}
+		.details {
+			text-align:center;
+		}
+		.tab {
+			margin-left: 50px;
+			display: inline-block;
+		}
+		h3 {
+			padding
+		}
+		.further {
+			
+			padding-right: 3px;
+		}
+		textarea {
+			min-height: 3.5em;
+			min-width: 50%;
+			border: solid 1px #999;
+			border-radius: 3px;
+			margin-right:.5em;
+			resize:none;
+		}
+		.dis {
+			display: relative;
+		}
+		.selectorder {
+			text-align: center;
+			font-family: Verdana, Helvetica;
+		}
+		
+		.burgervar {
+			display:inline;
+		}
+		label {
+			font-family: Verdana,Helvetica;
+			font-size: 15px;
+			color: black;
+			font-weight: bold;
+		}
+		img {
+			width: 90px;
+			height: 80px;
+		}
+		.tab1 {
+			display: relative;
+		}
+		.tab2 {
+			display: relative;
+		}
+		.tab3 {
+			display:relative;
+		}
+		.tab4 {
+			display:relative;
+		}
+		input[type=submit]:hover {
+			color: cyan;
+		}
+		.details 
+		input[type=text], input[type=name], 
+		input[type=text], input[type=address],
+		input[type=text], input[type=tel],
+		input[type=text], input[type=email],
+		textarea {
+			width: 40%;
+			height:20px;
+			padding: 12px;
+			margin-top: 5px;
+			border: none;
+			background: #f1f1f1;
+		}
+		input[type=text], input[type=number] {
+			width:40px;
+			height:20px;
+		}
+		buttom {
+			padding-botton: 10px;
+		}
+	</style>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css">
+	<!--LARAGAN,JULIANNE GAYLE-->
+	<!--04/29/22-->
+	<div align="center">
+	<form action=" " method="GET" enctype="multipart/form-data">
+	<h2><i>Pizza Order Form</i></h2>
+    <div class="details">
+	<div>
+		<label for="name">Fullname: </label>
+		<input type="text" name="name" id="name" required>
+	</div>
+	<div>
+		<label for="address">Complete Address: </label>
+		<input type="address" name="address" id="email" required>
+	</div>
+	<div>
+		<label for="tel">Contact Number: </label>
+		<input type="tel" name="phone" id="phone" required>
+	</div>
+	<div>
+		<label for="email">Email Address:</label>
+		<input type="email" name="email" id="email" required>
+	</div>
+	<div class="comments">
+		<div class="further">
+		<label for="furthercomments">Description of how to get to the place:</label>
+		</div>
+		<div>
+			<textarea id="furthercomments" name="furthercomments" style="resize:none;" > </textarea>
+		</div>
+	</div>
+	</div>
+		<h3>Select your orders:</h3>
+		<div class="tab1">
+			<input type="checkbox" name="burgers" id="burgers">
+			<label for="burgers" class="dis">Burgers</label>
+			<img src="../images/burger.png" class="dis">
+			<div class="burgervar">
+				<div>
+					<label for="burgers">Variation:</label>
+					<select id="burgers" name="burgers" size="1">
+					<option value="single">Single Patty</option>
+					<option value="double">Double Patty</option>
+					</select>
+				</div>
+			</div>
+			<label for="burgers">Choice of bun:</label>
+				<select id="burgers" name="burgers" size="1">
+				<option value="white">White or Wheat bun</option>
+				<option value="honey">Honey Oat</option>
+				<option value="honey">Sugar free</option>
+			</select>
+			<div>
+			<label for="addons">Add ons:</label>
+			<div class="tab">
+				<input type="checkbox" name="cheese" id="cheese">
+				<label for="cheese">Cheese</label>
+			</div>
+			<div class="tab">
+				<input type="checkbox" name="coleslaw" id="coleslaw">
+				<label for="coleslaw">Coleslaw</label> 
+			</div>
+			</div>
+			<div>
+			<div class="tab">
+				<input type="checkbox" name="tomato" id="tomato">
+				<label for="tomato">Tomato</label>
+			</div>
+			<div class="tab">
+				<input type="checkbox" name="cucumber" id="cucumber">
+				<label for="cucumber">Cucumber</label>
+			</div>
+			</div>
+			<div>
+			<div class="tab">
+				<input type="checkbox" name="onion" id="onion">
+				<label for="tomato">Onion</label>
+			</div>
+			<div class="tab">
+				<input type="checkbox" name="bacon" id="bacon">
+				<label for="bacon">Bacon</label>
+			</div>
+			</div>
+			<div>
+				<label for="number">Quantity: </label>
+				<input type="number" name="number" id="number" required>
+			</div>
+		</div>
+		<br>
+		<div class="tab2">
+			<input type="checkbox" name="pastas" id="pastas">
+			<label for="pastas">Pastas</label> 
+			<img src="../images/pasta.png">
+			<div class="sauces">
+				<label for="sauce">Select sauce:</label>
+					<select id="sauce" name="sauce" size="1">
+					<option value="carb">Carbonara</option>
+					<option value="pesto">Pesto</option>
+					<option value="spag">Spaghetti</option>
+				</select>
+			</div>
+			<div>
+			<label for="addons">Add ons:</label>
+			<div class="tab">
+				<input type="checkbox" name="cheese" id="cheese">
+				<label for="cheese">Extra Cheese</label>
+			</div>
+			<div class="tab">
+				<input type="checkbox" name="extrasauce" id="extrasauce">
+				<label for="extrasauce">Extra sauce</label> 
+			</div>
+			</div>
+			<div>
+			<div class="tab">
+				<input type="checkbox" name="mushroom" id="mushroom">
+				<label for="mushroom">Mushroom</label>
+			</div>
+			<div class="tab">
+				<input type="checkbox" name="bellpepper" id="bellpepper">
+				<label for="bellpepper">Bellpepper</label>
+			</div>
+			</div>
+			<div>
+				<label for="number">Quantity: </label>
+				<input type="number" name="number" id="number" required>
+			</div>
+		</div>
+		<br><br>
+		<div class="tab3">
+			<input type="checkbox" name="fries" id="fries">
+			<label for="fries">Fries</label>
+			<img src="../images/fries.png">
+			<div class="Fries">
+				<label for="size">Select size:</label>
+					<select id="fries" name="fries" size="1">
+					<option value="small">Small</option>
+					<option value="medium">Medium</option>
+					<option value="large">Large</option>
+				</select>
+			</div>
+			<div class="Flavor">
+				<label for="flavor">Select size:</label>
+					<select id="flavor" name="flavor" size="1">
+					<option value="bbq">BBQ</option>
+					<option value="cheese">Cheese</option>
+					<option value="sour">Sour Cream</option>
+				</select>
+			</div>
+			<div>
+				<label for="number">Quantity: </label>
+				<input type="number" name="number" id="number" required>
+			</div>
+		</div>
+		<br><br>
+		<div class="tab4">
+			<input type="checkbox" name="drinks" id="drinks">
+			<label for="drinks">Drinks</label>
+			<img src="../images/drinks.png">
+			<div>
+				<label for="drinks">Select drink:</label>
+				<select id="drinks" name="drinks" size="1">
+				<option value="coke">Coke</option>
+				<option value="sprite">Sprite</option>
+				<option value="royal">Royal</option>
+				<option value="cokezero">Coke Zero</option>
+				</select>
+			</div>
+			<div class="Drinks">
+				<label for="size">Select size:</label>
+					<select id="fries" name="fries" size="1">
+					<option value="small">Small</option>
+					<option value="medium">Medium</option>
+					<option value="large">Large</option>
+				</select>
+			</div>
+			<div>
+				<label for="number">Quantity: </label>
+				<input type="number" name="number" id="number" required>
+			</div>
+		</div>
+		<br><br>
+		<div class="comments">
+			<div class="further">
+				<label for="furthercomments">Feedback on how to improve our order form:</label>
+			</div>
+			<div>
+				<textarea id="furthercomments" name="furthercomments" style="resize:none;" > </textarea>
+			</div>
+		</div>
+		<div class="tab__1">
+			<input type="radio" name="choose" id="deliver">
+			<label for="deliver">Delivery</label>
+		</div>
+		<div class="tab__2">
+			<input type="radio" name="choose" id="pickup">
+			<label for="pickup">Pick-up</label> 
+		</div>
+
+	
+<br>
+	<button type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
